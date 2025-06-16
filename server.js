@@ -1,5 +1,5 @@
 require('dotenv').config();
-const express = require('expresss');
+const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const eventRoutes = require('./routes/events');
@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 app.use(bodyParser.json());
 app.use(loggerMiddleware);
-app.use(rateLimitMiddleware):
+app.use(rateLimitMiddleware);
 
 //Root route
 app.get('/', (req, res) => {
