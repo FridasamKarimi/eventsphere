@@ -35,7 +35,7 @@ app.use('/api/events', authMiddleware,eventRoutes);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-    console.log('Server is running 0 http:localhost:${PORT}');
+    console.log(`Server is running on http:localhost:${PORT}`);
 });
 
 module.exports = app;
