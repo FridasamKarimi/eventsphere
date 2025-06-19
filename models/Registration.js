@@ -1,6 +1,6 @@
-const mongoose = require('moongose');
+const mongoose = require('mongoose');
 
-const registrationSchema = new moongose.Schema({
+const registrationSchema = new mongoose.Schema({
     eventId: { type: String, required: true },
     userId: { type: String, required: true},
     registeredAt: { type: Date,default: Date.now }
